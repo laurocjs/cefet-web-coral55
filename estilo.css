@@ -1,2 +1,73 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
+
+main {
+  background-image: linear-gradient(#f6f1b2, #4599b2);
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  border: solid 1px #d3d3d3;
+}
+
+main header h1 {
+  text-align: center;
+  font-family: "Ravie";
+  font-size: 36px;
+  color: #e90c0c;
+}
+
+main header h2 {
+  text-align: right;
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  color: #333;
+}
+
+main header h2 em {
+  color: #d027aa;
+  font-style: normal;
+}
+
+main section#conteudo {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: "Verdana";
+  color: #333;
+}
+
+main section#conteudo #lateral {
+  width: 154px;
+  margin: 0;
+}
+
+main section#conteudo #lateral h2 {
+  height: 154px;
+  font-size: 48px;
+  text-align: center;
+  transform: rotate(-90deg);
+  margin-top: 50%;
+}
+
+main section#conteudo #cardapio {
+  width: 646px;
+  margin: 0;
+  background-color: #ffffff20;
+  border: solid 1px #aac0ae;
+  padding: 10px;
+}
+
+main section#conteudo #cardapio h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main footer {
+  position: relative;
+}
+
+aside#ticket {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
