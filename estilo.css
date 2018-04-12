@@ -14,6 +14,7 @@ main header h1 {
   font-family: "Ravie";
   font-size: 36px;
   color: #e90c0c;
+  padding-left: 100px
 }
 
 main header h2 {
@@ -21,6 +22,7 @@ main header h2 {
   font-family: "Trebuchet MS";
   font-size: 24px;
   color: #333;
+  margin-right: 50px;
 }
 
 main header h2 em {
@@ -39,14 +41,39 @@ main section#conteudo {
 main section#conteudo #lateral {
   width: 154px;
   margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main section#conteudo #lateral>img#siri {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+
+main section#conteudo #lateral>img#bolhas {
+  /* position: absolute; */
+  top: 0px;
+  left: -10px;
+}
+
+main section#conteudo #lateral>img#peixe {
+  position: absolute;
+  bottom: 0px;
+  left: -44px;
 }
 
 main section#conteudo #lateral h2 {
   height: 154px;
   font-size: 48px;
-  text-align: center;
+  text-align: left;
   transform: rotate(-90deg);
-  margin-top: 50%;
+  /* margin-top: 50%; */
+  vertical-align: middle;
+  line-height: 154px;
 }
 
 main section#conteudo #cardapio {
@@ -62,12 +89,38 @@ main section#conteudo #cardapio h3 {
   font-weight: bold;
 }
 
+main section#conteudo #cardapio>ul {
+  list-style: none;
+  padding-left: 0px;
+  line-height: 2em;
+}
+
+main section#conteudo #cardapio>ul .preco {
+  float: right;
+}
+
 main footer {
   position: relative;
+  /* width: 100%; */
+  text-align: right;
+}
+
+main footer img {
+  position: relative;
+  right: 15px;
+  vertical-align: middle;
+  margin-top: 46px;
+  margin-bottom: 25px;
 }
 
 aside#ticket {
   position: fixed;
   top: 50%;
+  left: 0;
   transform: translate(-50%, -50%);
+}
+
+aside#ticket:hover {
+  transform: translate(0%, -50%);
+  transition: transform 300ms ease-out; /* propriedade, duração, interpolação */
 }
